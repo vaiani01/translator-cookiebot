@@ -4,21 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "ngrok": "ngrok http 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "cookies-next": "^4.0.0",
+    "next": "13.5.4",
+    "ngrok": "^5.0.0-beta.2",
     "react": "^18",
+    "react-cookiebot": "^1.0.10",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "rsuite": "^5.40.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5"
   }
 }

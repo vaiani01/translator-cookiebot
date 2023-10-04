@@ -1,10 +1,19 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+"use client";
+import Image from "next/image";
+import styles from "./page.module.css";
+import GoogleTranslate from "./GoogleTranslate/GoogleTranslate";
+import dynamic from "next/dynamic";
+import CookieBotLib from "react-cookiebot";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <CookieBotLib
+        domainGroupId="df96d169-da01-4be0-8887-df1cb47c9eae"
+        language="FR"
+      />
       <div className={styles.description}>
+        <GoogleTranslate />
+
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -15,7 +24,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +100,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
